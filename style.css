@@ -30,11 +30,27 @@ h3 {
     font-size: 40px;
 }
 
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    font-style: normal;
+}
+
 .pMedium {
     font-family: 'Roboto', sans-serif;    
-    font-weight: medium;
+    font-weight: bold;
     font-size: 24px;
     color: #6B708D;
+}
+
+.headLineRegular {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #000000;
 }
 
 /*----------------------------------------------------------------------*/
@@ -103,10 +119,254 @@ nav button {
     justify-content: center;
 }
 
+.heroSectionContainer p {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.heroImage {
+    width: 570px;
+    height: 637px;
+    position: relative;
+}
+
+.heroCardImage {
+    position: absolute;
+    width: 365px;
+    height: 430px;
+    top: 20%;
+    left: 43%;
+}
+
+.heroLikeCard {
+    position: absolute;
+    width: 365px;
+    height: 400px;
+    top: 61%;
+    left: 68%;
+}
+
 .heroSectionContainer button {
     background-color: #072AC8;
     width: 150px;
     height: 52px;
     border: none;
     color: #fff;
+}
+/*----------------------------------------------------------------------*/
+/*-----------------------BRANDS SECTIONS------------------------------------*/
+
+.brandsSection {
+    margin-top: 5%;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+}
+
+.brandsSectionContainer {
+    width: 1100px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.brandsSectionContainer img {
+    filter: grayscale(100%);
+}
+/*----------------------------------------------------------------------*/
+/*-----------PROJECTS SECTION---------------------------------------*/
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recentProjectsSection {
+    margin-top: 5%;
+    height: 561px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.recentProjectsSectionContainer {
+    width: 1100px; 
+
+}
+
+.recentProjectsSectionContainer h3 {
+    margin-bottom: 5%;
+}
+
+.projects div{
+    background-color: #fff;
+    width: 340px;
+    height: 444px;
+}
+
+.projects h4 {
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
+.projects .headLineRegular {
+    margin-top: 3%;
+    margin-left: 8%;
+}
+
+.projects div img{
+    width: 340px;
+    height: 240px;
+}
+
+/*----------------------------------------------------------------------*/
+/*-----------------------------TESTIMONIAL SECTION---------------------------*/
+.testimonialSection {
+    display: flex;
+    justify-content: center;
+    height: 622px;
+    width: 1320px;
+    margin-top: 5%;
+    background-color: #292E47;
+    align-items: center;
+}
+
+.testimonialSection img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.testimonialSectionContainer {
+    width: 1100px;
+    height: 382px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+.testimonialContent {
+    width: 621px;
+    height: 382px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+/*-----------------------------SERVICES--------------------------------*/
+
+
+.servicesSection {
+    display: flex;
+    justify-content: center;
+    height: 561px;
+    margin-top: 5%;
+}
+
+.servicesSectionContainer {
+    width: 1100px;
+    height: 497px;
+}
+
+.servicesSectionContainer h3 {
+    margin-bottom: 5%;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .service {
+    width: 340px;
+    height: 380px;
+    background-color: #fff;
+}
+
+.service .headLineRegular {
+    margin-top: 6%;
+}
+
+.services img {
+    margin-bottom: 10%;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: #ECF7FF;
+}
+/*-------------------------CTA SECTION-------------------------------------*/
+
+.CTASection {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 1320px;
+    margin-top: 5%;
+    background-color: #FFC600;
+    align-items: center;
+}
+
+.CTASectionContainer {
+    width: 1100px;
+    height: 227px;
+    text-align: center;
+}
+.CTASectionContainer p {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.subscribeNewsletter input, button {
+    width: 393px;
+    height: 80px;
+}
+.subscribeNewsletter button {
+    background-color: #072AC8;
+    color: #fff;
+    border: none;
+    width: 198px;
+    height: 80px;
+}
+
+.subscribeNewsletter input {
+    background: url(project-assets/newsletter/icon/mail.svg) no-repeat left;
+    padding-left: 40px;
+    background-color: #fff;
+    border: none;
+    width: 393px;
+    height: 80px;
+}
+
+/*-------------------------FOOTER-------------------------------------*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 242px;
+    margin-top: 5%;
+}
+
+.footerContainer {
+    width: 1100px;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.direction {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footerLinksContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 435px;
+}
+
+.footerLinks {
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
