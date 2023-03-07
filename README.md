@@ -1,1 +1,0 @@
-# ironhacks-mid-project
