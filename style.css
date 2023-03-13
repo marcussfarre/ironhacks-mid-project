@@ -79,14 +79,6 @@ nav {
     height: 50%;
 }
 
-.navContainer button{
-    height: 100%;
-    width: 12%;
-    color: #fff;
-    background-color: #072AC8;
-    border: none;
-}
-
 .navContainer ul {
     display: flex;
     justify-content: space-around;
@@ -102,7 +94,19 @@ nav {
     color: #292E47;
 }
 
-.navContainer a:hover {
+.navContainer button{
+    height: 100%;
+    width: 12%;
+    color: #fff;
+    background-color: #072AC8;
+    border: none;
+}
+
+.navContainer button a{
+    color: #fff;
+}
+
+.navContainer ul a:hover {
     color: #072AC8;
 }
 
@@ -161,7 +165,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 96px;
+    height: 10%;
     margin-top: 5%;
 }
 
@@ -169,6 +173,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 70%;
     height: 100%;
 }
@@ -212,6 +217,10 @@ nav {
 .projects h4 {
     margin-top: 8%;
     margin-left: 8%;
+}
+
+.projects a {
+    text-decoration: none;
 }
 
 .projects .headLineRegular {
