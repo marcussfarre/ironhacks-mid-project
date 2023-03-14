@@ -203,3 +203,14 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 390px) {
+    .direction img {
+        margin-bottom: 10%;
+    }
+
+    .footerLinksContainer {
+        margin-top: 10%;
+        width: 100% !important;
+    }
+}

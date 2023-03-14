@@ -90,6 +90,9 @@ nav {
     .navContainer ul {
         width: 50% !important;
     }
+    .navContainer button{
+        width: 20%;
+    }
 }
 
 .navContainer a {
@@ -103,12 +106,6 @@ nav {
     color: #fff;
     background-color: #072AC8;
     border: none;
-}
-
-@media only screen and (max-width: 810px) {
-    .navContainer button{
-        width: 20%;
-    }
 }
 
 .navContainer button a{
@@ -175,6 +172,18 @@ nav {
     .projects div{
         width: 45% !important;
         margin-bottom: 5% !important;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .recentProjectsSection h3 {
+        font-size: 35px !important;
+        margin-bottom: 15%;
+    }
+
+    .projects div{
+        width: 100% !important;
+        margin-bottom: 10% !important;
     }
 }
 
@@ -251,6 +260,22 @@ nav {
     }
 }
 
+@media only screen and (max-width: 390px) {
+    .subscribeNewsletter input {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    .CTASection {
+        width: 100%;
+        margin-top: 10%;
+        background-color: #FFC600;
+        height: 800px;
+    }
+    .CTASection h3 {
+        font-size: 30px !important;
+    }
+}
+
 /*---------------------FOOTER----------------------*/
 
 footer {
@@ -284,4 +309,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 390px) {
+    .direction img {
+        margin-bottom: 10%;
+    }
+
+    .footerLinksContainer {
+        margin-top: 10%;
+        width: 100% !important;
+    }
 }
