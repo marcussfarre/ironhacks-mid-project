@@ -79,6 +79,24 @@ nav {
     height: 50%;
 }
 
+.navContainer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+}
+
+@media only screen and (max-width: 810px) {
+    .navContainer ul {
+        width: 50% !important;
+    }
+}
+
+.navContainer a {
+    text-decoration: none;
+    color: #292E47;
+}
+
 .navContainer button{
     height: 100%;
     width: 12%;
@@ -87,22 +105,17 @@ nav {
     border: none;
 }
 
-.navContainer ul {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+@media only screen and (max-width: 810px) {
+    .navContainer button{
+        width: 20%;
+    }
 }
 
-.navContainer ul {
-    list-style: none;
+.navContainer button a{
+    color: #fff;
 }
 
-.navContainer a {
-    text-decoration: none;
-    color: #292E47;
-}
-
-.navContainer a:hover {
+.navContainer ul a:hover {
     color: #072AC8;
 }
 
@@ -133,13 +146,15 @@ nav {
 .projectInfoContainer .paragraph {
     margin-top: 3%;
 }
+
 /*---------------------RECENT PROJECTS SECTION----------------------*/
 
 .recentProjectsSection {
     margin-top: 5%;
-    height: 561px;
+    height: 40%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -151,8 +166,16 @@ nav {
 .projects {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 5%;
     height: 80%;
+}
+
+@media only screen and (max-width: 810px) {
+    .projects div{
+        width: 45% !important;
+        margin-bottom: 5% !important;
+    }
 }
 
 .projects div{
@@ -170,10 +193,15 @@ nav {
     margin-left: 8%;
 }
 
+.projects a {
+    text-decoration: none;
+}
+
 .projects .headLineRegular {
     margin-top: 3%;
     margin-left: 8%;
 }
+
 
 /*-------------------------CTA SECTION-------------------------------------*/
 
@@ -213,10 +241,15 @@ nav {
     padding-left: 40px;
     background-color: #fff;
     border: none;
-    width: 393px;
+    width: 50%;
     height: 80px;
 }
 
+@media only screen and (max-width: 810px) {
+    .subscribeNewsletter input {
+        margin-bottom: 5%;
+    }
+}
 
 /*---------------------FOOTER----------------------*/
 

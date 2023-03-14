@@ -83,10 +83,13 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 30%;
+    list-style: none;
 }
 
-.navContainer ul {
-    list-style: none;
+@media only screen and (max-width: 810px) {
+    .navContainer ul {
+        width: 50% !important;
+    }
 }
 
 .navContainer a {
@@ -100,6 +103,12 @@ nav {
     color: #fff;
     background-color: #072AC8;
     border: none;
+}
+
+@media only screen and (max-width: 810px) {
+    .navContainer button{
+        width: 20%;
+    }
 }
 
 .navContainer button a{
@@ -116,7 +125,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 650px;
+    height: 40%;
     margin-top: 5%;
 }
 
@@ -124,12 +133,29 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 70%;
     height: 100%;
 }
 
 .heroContainer div {
     width: 50%;
+}
+
+@media only screen and (max-width: 810px) {
+    .heroContainer h1 {
+        text-align: center;
+        font-size: 40px !important;
+    }
+    .heroContainer p {
+        text-align: center;
+    }
+    .heroContainer div div {
+        justify-content: center;
+    }
+    .heroContainer div{
+        width: 100% !important;
+    }
 }
 
 .heroCardImage {
@@ -156,6 +182,19 @@ nav {
     color: #fff;
     background-color: #072AC8;
     border: none;
+}
+
+@media only screen and (max-width: 810px) {
+    .heroCardImage {
+        top: 42%;
+        left: 3%;
+        width: 40%;
+    }
+    .heroLikeCard {
+        top: 85%;
+        left: 60%;
+        width: 35%;
+    }
 }
 
 
@@ -186,9 +225,10 @@ nav {
 
 .recentProjectsSection {
     margin-top: 5%;
-    height: 561px;
+    height: 40%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -200,8 +240,16 @@ nav {
 .projects {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 5%;
     height: 80%;
+}
+
+@media only screen and (max-width: 810px) {
+    .projects div{
+        width: 45% !important;
+        margin-bottom: 5% !important;
+    }
 }
 
 .projects div{
@@ -245,6 +293,52 @@ nav {
     height: 150px;
 }
 
+@media only screen and (max-width: 810px) {
+    .services .service {
+        width: 45% !important;
+        margin-bottom: 5% !important;
+    }
+    .emoji1 {
+        bottom: 33% !important;
+        right: 4% !important;
+    }
+    
+    .emoji2 {
+        top: 33% !important;
+        right: 27% !important;
+    }
+    
+    .emoji3 {
+        bottom: 33% !important;
+        left: 28% !important;
+    }
+    
+    .emoji4 {
+        top: 34% !important;
+        left: 4% !important;
+    }
+}
+
+.emoji1 {
+    bottom: 30%;
+    right: 25%;
+}
+
+.emoji2 {
+    top: 30%;
+    right: 37%;
+}
+
+.emoji3 {
+    bottom: 32%;
+    left: 35%;
+}
+
+.emoji4 {
+    top: 27%;
+    left: 24%;
+}
+
 .testimonialSectionContainer {
     width: 70%;
     height: 382px;
@@ -271,17 +365,16 @@ nav {
 
 /*-----------------------------SERVICES--------------------------------*/
 
-
 .servicesSection {
     display: flex;
     justify-content: center;
-    height: 561px;
+    height: 40%;
     margin-top: 5%;
 }
 
 .servicesContainer {
     width: 70%;
-    height: 497px;
+    height: 40%;
 }
 
 .servicesSectionContainer h3 {
@@ -291,6 +384,7 @@ nav {
 .services {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 5%;
 }
 
@@ -298,6 +392,13 @@ nav {
     width: 30%;
     height: 380px;
     background-color: #fff;
+}
+
+@media only screen and (max-width: 810px) {
+    .services .service {
+        width: 45% !important;
+        margin-bottom: 5% !important;
+    }
 }
 
 .service .headLineRegular {
@@ -349,8 +450,14 @@ nav {
     padding-left: 40px;
     background-color: #fff;
     border: none;
-    width: 393px;
+    width: 50%;
     height: 80px;
+}
+
+@media only screen and (max-width: 810px) {
+    .subscribeNewsletter input {
+        margin-bottom: 5%;
+    }
 }
 
 

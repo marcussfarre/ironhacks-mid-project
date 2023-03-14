@@ -27,25 +27,25 @@
             <div class="fNameContainer">
                 <label for="fName">Full Name*</label>
                 <input id="fName" type="text" style="width: 100%; height: 50px; margin-top: 2%;" placeholder="Enter Your Full Name">
-                <div id="errorName"></div>
+                <div class="errorDiv" id="errorName"></div>
             </div>
             <div class="contactContainer" style="display: flex; justify-content: space-between; margin-top: 3%;">
                 <div style="width: 47%;">
                     <label for="eAddress">Email</label>
                     <input id="eAddress" type="text" style="width: 100%; height: 50px; margin-top: 2%;" placeholder="Enter Your Email Address">
-                    <div id="errorEmail"></div>
+                    <div class="errorDiv" id="errorEmail"></div>
                 </div>
                 <div style="width: 47%;">
                     <label for="cPhone">Phone</label>
                     <input id="cPhone" type="text" style="width: 100%; height: 50px; margin-top: 2%;" placeholder="Enter Your Number phone">
-                    <div id="errorPhone"></div>
+                    <div class="errorDiv" id="errorPhone"></div>
                 </div>
             </div>
             <div class="fMessageContainer" style="margin-top: 3%;">
                 <label for="fName">Message</label> <br>
-                <textarea style="margin-top: 2%;" cols="139" rows="10" placeholder="Write your message here..."></textarea>
+                <textarea cols="139" rows="10" placeholder="Write your message here..."></textarea>
             </div>
-            <button onclick="validateFields()" style="width: 100%; background-color: #072AC8; color: #fff; height: 50px; margin-top: 5%; border: none;">
+            <button class="submitButton" onclick="validateFields()">
                 Submit
             </button>
     </section>

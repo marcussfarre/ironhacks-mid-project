@@ -79,6 +79,24 @@ nav {
     height: 50%;
 }
 
+.navContainer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+}
+
+@media only screen and (max-width: 810px) {
+    .navContainer ul {
+        width: 50% !important;
+    }
+}
+
+.navContainer a {
+    text-decoration: none;
+    color: #292E47;
+}
+
 .navContainer button{
     height: 100%;
     width: 12%;
@@ -87,24 +105,20 @@ nav {
     border: none;
 }
 
-.navContainer ul {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
+@media only screen and (max-width: 810px) {
+    .navContainer button{
+        width: 20%;
+    }
 }
 
-.navContainer ul {
-    list-style: none;
+.navContainer button a{
+    color: #fff;
 }
 
-.navContainer a {
-    text-decoration: none;
-    color: #292E47;
-}
-
-.navContainer a:hover {
+.navContainer ul a:hover {
     color: #072AC8;
 }
+
 /*---------------------SECTION----------------------*/
 
 .contactUsSection {
@@ -134,6 +148,25 @@ form {
 .contacts input {
     margin-top: 1%;
     height: 60px;
+}
+
+.fMessageContainer textarea {
+    margin-top: 2%;
+    width: 100%;
+}
+
+.errorDiv {
+    margin-top: 3%;
+    color: red;
+}
+
+.submitButton {
+    width: 100%;
+    background-color: #072AC8;
+    color: #fff;
+    margin-top: 5%;
+    border: none;
+    padding: 5%;
 }
 
 /*---------------------FOOTER----------------------*/
