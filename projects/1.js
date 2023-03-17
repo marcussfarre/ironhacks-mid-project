@@ -11,7 +11,6 @@ async function loadApiInfo() {
         return response.json();
     })
     .then((data) => {
-        console.log("Parsed response: ", data);
         return data;
     })
     .catch((err) => console.log(err));
@@ -19,7 +18,6 @@ async function loadApiInfo() {
 
 async function manageInformation() {
     let response = await loadApiInfo();
-    console.log(response);
     let id = getUrlId();
 
     if (id && response) {
@@ -37,10 +35,10 @@ async function manageInformation() {
         createChild(project.name, 'name', 'h1');
         createChild(project.description, 'description', 'h4');
         createChild(project.content, 'content', 'p');
+        var element = document.getElementById("content");
+        element.classList.add("pBodyRegular");
         document.getElementById("projectImage").src = project.image;
     } 
-
-    console.log(project);
 }
 
 function getUrlId() {

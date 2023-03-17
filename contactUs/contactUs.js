@@ -2,12 +2,12 @@ function validateFields() {
     resetErrors();
     let fNameValidation = fullNameValidation(document.getElementById('fName').value);
     let cPhonevalidation = phoneValidation(document.getElementById('cPhone').value);
-    let eAddressvalidation = emailValidation(document.getElementById('eAddress').value);
+    //let eAddressvalidation = emailValidation(document.getElementById('eAddress').value);
 
-    if (!fNameValidation || !cPhonevalidation || !eAddressvalidation) {
+    if (!fNameValidation || !cPhonevalidation /*|| !eAddressvalidation*/) {
         console.log('Not send');
     } else {
-        console.log('Send');
+        sendEmail();
     }
 }
 
@@ -66,3 +66,7 @@ function createError(name, divElement, errorMessage) {
     const element = document.getElementById(name);
     element.appendChild(elementChild);
 }
+
+function sendEmail() {
+    window.open(`mailto:document.getElementById('eAddress').value?subject=Ironhacks&body=Good Job in IRONHACKS`);
+  }
